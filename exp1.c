@@ -8,10 +8,15 @@ int main(int argc, char *argv[])
 	
 	printf("Print second char %c \n", *(test_string+1));
 	
-	char *array_strings[] = {"Brian", "Camille", "Joshua"};
+	char *test_string2 = "bad";
 	
-	char *the_array = array_strings;
+	printf("test %c\n", *(test_string2 + 1));
 	
+	//char *array_strings[] = {"Brian", "Camille", "Joshua"};
 	
-	printf("Print second char %c \n", *((*array_strings)+1));
+	//char **the_array = array_strings;
+	
+	//printf("Print test %c", *the_array);
+	
+	//printf("Print second char %c \n", *((*array_strings)+1));
 }
