@@ -9,7 +9,8 @@ all:
 	#cc -o ex7 ex7.c
 	#cc -o exp_pointers exp_pointers.c
 	#cc -o head1 head1.c
-	cc -o head2.5 head2.5.c
+	#cc -o head2.5 head2.5.c
+	cc -o head3 head3.c
 
 clean:
 	rm -f ex1
@@ -22,6 +23,7 @@ clean:
 	rm -f exp_pointers
 	rm -f head1
 	rm -f head2.5
+	rm -f head3
 	rm -f *.*~
 	rm -f *~
 
