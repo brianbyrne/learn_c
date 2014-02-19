@@ -19,6 +19,16 @@ int main(int argc, char *args[]){
 		}
 		printf("{latitude: %f, longitude: %f, info: '%s'}",longitude, latitude, info);
 		
+		if((latitude < -90.0) || (latitude > 90.0)) {
+			fprintf(stderr,"Invalid latitude: %f\n", latitude);
+			return 2;
+		}
+		
+		if((longitude < -180.0) || (longitude > 180.0)) {
+			fprintf(stderr,"Invalid longitude: %f\n", longitude);
+			return 2;
+		}
+		
 	}
 	puts("\n]");
 	return 0;

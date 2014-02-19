@@ -11,6 +11,9 @@ all:
 	#cc -o head1 head1.c
 	#cc -o head2.5 head2.5.c
 	cc -o head3 head3.c
+	cc -o head3_stderr head3_stderr.c
+	cc -o bermuda bermuda.c
+	cc -o fileop fileop.c
 
 clean:
 	rm -f ex1
@@ -24,6 +27,9 @@ clean:
 	rm -f head1
 	rm -f head2.5
 	rm -f head3
+	rm -f head3_stderr
+	rm -f bermuda
+	rm -f fileop
 	rm -f *.*~
 	rm -f *~
 
