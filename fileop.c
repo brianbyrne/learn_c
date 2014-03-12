@@ -4,9 +4,15 @@
 
 int main(int argc, char *args[]) {
 	char line[80];
-	FILE *in = fopen("spooky.csv", "r");
+	
+	FILE *in;
 	FILE *file1 = fopen("ufo.csv", "w");
 	FILE *file2 = fopen("others.csv", "w");
+	
+	if(!(in = fopen("spookys.csv", "r"))) {
+		fprintf(stderr, "Can't open the file\n");
+		return 1;
+	}
 	
 	while(fscanf(in, "%79[^\n]", line) == 1) {
 		if(strstr(line, "UFO")) {

@@ -10,10 +10,12 @@ all:
 	#cc -o exp_pointers exp_pointers.c
 	#cc -o head1 head1.c
 	#cc -o head2.5 head2.5.c
-	cc -o head3 head3.c
-	cc -o head3_stderr head3_stderr.c
-	cc -o bermuda bermuda.c
-	cc -o fileop fileop.c
+	#cc -o head3 head3.c
+	#cc -o head3_stderr head3_stderr.c
+	#cc -o bermuda bermuda.c
+	#cc -o fileop fileop.c
+	#cc -o args args.c
+	cc -o ex16 ex16.c
 
 clean:
 	rm -f ex1
@@ -30,6 +32,8 @@ clean:
 	rm -f head3_stderr
 	rm -f bermuda
 	rm -f fileop
+	rm -f args
+	rm -f ex16
 	rm -f *.*~
 	rm -f *~
 
