@@ -40,9 +40,26 @@ void Person_print(struct Person *who)
 	printf("\tWeight: %d\n", who->weight);
 }
 
+void Person_print2(struct Person who)
+{
+	printf("Name: %s\n", who.name);
+	printf("\tAge: %d\n", who.age);
+	printf("\tHeight: %d\n", who.height);
+	printf("\tWeight: %d\n", who.weight);
+}
+
 
 int main(int argc, char *argv[])
 {
+	struct Person onStack;
+	onStack.name =  "Brian On Stack";
+	onStack.age = 32;
+	onStack.height = 174;
+	onStack.weight = 14;
+	
+	printf("Brian is at memory location: %p\n", &onStack);
+	Person_print2(onStack);
+	
 	struct Person *joe = Person_create("Joe Alex", 32, 64, 140);
 	
 	struct Person *frank = Person_create("Frank Blank", 19, 60, 168);
@@ -65,5 +82,6 @@ int main(int argc, char *argv[])
 	
 	Person_destroy(joe);
 	Person_destroy(frank);
+	Person_print(NULL);
 	 
 }
