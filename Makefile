@@ -15,7 +15,7 @@ all:
 	#cc -o bermuda bermuda.c
 	#cc -o fileop fileop.c
 	#cc -o args args.c
-	cc -o ex16 ex16.c
+	#cc -o ex16 ex16.c
 	cc -o ex17 ex17.c
 
 clean:
